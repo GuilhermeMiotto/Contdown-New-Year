@@ -2,7 +2,7 @@ const countdownEls = document.querySelectorAll(".countdown")
 countdownEls.forEach(countdownEl => createCountdown(countdownEl))
 
 function createCountdown(countdownEl){
-  const target = new Date(new Date(countdownEl.dataset.targetDate).toLocaleString('en', ))
+  const target = new Date(new Date(countdownEl.dataset.targetDate).toLocaleString('pt-br', ))
   const parts = {
     days: {text: ["days","day"], dots: 30},
     hours: {text: ["hours","hour"], dots: 24},
