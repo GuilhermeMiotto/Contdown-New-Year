@@ -4,10 +4,10 @@ countdownEls.forEach(countdownEl => createCountdown(countdownEl))
 function createCountdown(countdownEl){
   const target = new Date(new Date(countdownEl.dataset.targetDate).toLocaleString('pt-br', ))
   const parts = {
-    days: {text: ["days","day"], dots: 30},
-    hours: {text: ["hours","hour"], dots: 24},
-    minutes: {text: ["minutes","minute"], dots: 60},
-    seconds: {text: ["seconds","second"], dots: 60},
+    days: {text: ["dias","dia"], dots: 30},
+    hours: {text: ["horas","hora"], dots: 24},
+    minutes: {text: ["minutos","minuto"], dots: 60},
+    seconds: {text: ["segundos","segundo"], dots: 60},
   }
 
   Object.entries(parts).forEach(([key, value])=>{
